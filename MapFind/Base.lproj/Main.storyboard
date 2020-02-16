@@ -135,6 +135,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="About Us" id="wxU-wy-nYm">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="bSS-7r-97h"/>
+                        <barButtonItem key="rightBarButtonItem" image="bell.fill" catalog="system" id="kxP-r5-xV7"/>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
@@ -183,6 +184,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="C5E-U5-tur">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="j3e-cQ-s0J"/>
+                        <barButtonItem key="rightBarButtonItem" image="bell.fill" catalog="system" id="dqd-dG-cXn"/>
                     </navigationItem>
                     <connections>
                         <outlet property="fbbtn" destination="K1B-vP-vYZ" id="CZJ-LX-u46"/>
@@ -211,6 +213,7 @@
                                 <action selector="menubtn:" destination="ut4-s0-B7b" id="AcY-zQ-aUy"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="bell.fill" catalog="system" id="A0y-R0-bC0"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuBar" destination="waW-F0-ZKl" id="3Tz-BJ-MdE"/>
@@ -229,37 +232,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCh-cj-ksa">
-                                <rect key="frame" x="168" y="309" width="79" height="47"/>
+                                <rect key="frame" x="83" y="307" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Tab 1"/>
+                                <state key="normal" title="Mosque">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onTabShow:" destination="slW-UL-Kja" eventType="touchUpInside" id="chk-dM-KQF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFa-Hj-SPD">
-                                <rect key="frame" x="168" y="391" width="79" height="47"/>
+                                <rect key="frame" x="82" y="385" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Tab 2"/>
+                                <state key="normal" title="Police Station">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="onTabShow:" destination="slW-UL-Kja" eventType="touchUpInside" id="70Z-Zr-pMd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZB-85-Bfl">
-                                <rect key="frame" x="168" y="467" width="79" height="47"/>
+                                <rect key="frame" x="82" y="461" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Tab 3"/>
+                                <state key="normal" title="Restaurant">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onTabShow:" destination="slW-UL-Kja" eventType="touchUpInside" id="vJX-tZ-WLq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYx-gq-vgZ">
-                                <rect key="frame" x="168" y="541" width="79" height="47"/>
+                                <rect key="frame" x="82" y="535" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                <state key="normal" title="Tab 4"/>
+                                <state key="normal" title="Public Toilet">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onTabShow:" destination="slW-UL-Kja" eventType="touchUpInside" id="YSo-SX-Hcs"/>
                                 </connections>
@@ -270,14 +281,79 @@
                     </view>
                     <navigationItem key="navigationItem" id="8sg-SS-6HJ">
                         <barButtonItem key="leftBarButtonItem" image="line.horizontal.3" catalog="system" id="WJh-p0-Lry"/>
+                        <barButtonItem key="rightBarButtonItem" image="bell.fill" catalog="system" id="MT3-up-4f3"/>
                     </navigationItem>
                     <connections>
                         <outlet property="menuBar" destination="WJh-p0-Lry" id="J5M-iR-Ap8"/>
+                        <outlet property="msqbtn" destination="hCh-cj-ksa" id="UkM-fT-oYk"/>
+                        <outlet property="policebtn" destination="hFa-Hj-SPD" id="QG7-xD-yYj"/>
+                        <outlet property="restbtn" destination="TZB-85-Bfl" id="f0Q-A7-QqP"/>
+                        <outlet property="toiletbtn" destination="aYx-gq-vgZ" id="HXs-IG-Gel"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aa3-Bh-b5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3890" y="526"/>
+            <point key="canvasLocation" x="3889.8550724637685" y="525.66964285714289"/>
+        </scene>
+        <!--Police StationVC-->
+        <scene sceneID="QKM-lv-xjX">
+            <objects>
+                <viewController storyboardIdentifier="police" id="0DM-VC-6lp" customClass="PoliceStationVC" customModule="MapFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gH-iH-xdl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gdf-Y8-LCf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOm-gK-AGc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4632" y="529"/>
+        </scene>
+        <!--MosqueVC-->
+        <scene sceneID="Irv-Eu-67S">
+            <objects>
+                <viewController storyboardIdentifier="mosque" id="fv3-be-Hvd" customClass="MosqueVC" customModule="MapFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nJI-KF-I3W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fqR-Dy-zjF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ys4-48-kN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5342" y="530"/>
+        </scene>
+        <!--RestaurantVC-->
+        <scene sceneID="v5g-6E-NR1">
+            <objects>
+                <viewController storyboardIdentifier="restaurant" id="0P3-RK-zdf" customClass="RestaurantVC" customModule="MapFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Pa-w2-u4f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Yy5-2l-f69"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNC-oA-wR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6002" y="533"/>
+        </scene>
+        <!--Public ToiletVC-->
+        <scene sceneID="IJZ-XD-3VZ">
+            <objects>
+                <viewController storyboardIdentifier="toilet" id="6LB-Dd-Yir" customClass="PublicToiletVC" customModule="MapFind" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KPb-jh-Ekq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qtI-tE-yr2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJb-1s-Hsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6680" y="532"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tiL-hE-ujQ">
@@ -356,6 +432,7 @@
         <image name="Social" width="518" height="97"/>
         <image name="Social-1" width="518" height="97"/>
         <image name="Social-2" width="1071" height="205"/>
+        <image name="bell.fill" catalog="system" width="64" height="62"/>
         <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
         <image name="lion" width="300" height="168"/>
     </resources>

@@ -18,9 +18,12 @@ class SocialVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         fbbtn.layer.cornerRadius = 25
         gbtn.layer.cornerRadius = 25
         twbtn.layer.cornerRadius = 25
+        
         menuBar.target = self.revealViewController()
         menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
 

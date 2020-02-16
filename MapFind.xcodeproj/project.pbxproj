@@ -19,6 +19,10 @@
 		187C892E23F3D208004F3F36 /* Selcet_LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C892D23F3D208004F3F36 /* Selcet_LocationVC.swift */; };
 		187C893023F3D67C004F3F36 /* AboutUSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C892F23F3D67C004F3F36 /* AboutUSVC.swift */; };
 		187C893223F3D68F004F3F36 /* SocialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C893123F3D68F004F3F36 /* SocialVC.swift */; };
+		18F9A9E823F9196E005CB2AD /* PoliceStationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A9E723F9196E005CB2AD /* PoliceStationVC.swift */; };
+		18F9A9EA23F91988005CB2AD /* MosqueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A9E923F91988005CB2AD /* MosqueVC.swift */; };
+		18F9A9EC23F9199E005CB2AD /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A9EB23F9199E005CB2AD /* RestaurantVC.swift */; };
+		18F9A9EE23F919B9005CB2AD /* PublicToiletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9A9ED23F919B9005CB2AD /* PublicToiletVC.swift */; };
 		70E0153A32D1AC30F3A70F44 /* Pods_MapFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6EB085BDAD80E6FF36521F /* Pods_MapFind.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		187C892D23F3D208004F3F36 /* Selcet_LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selcet_LocationVC.swift; sourceTree = "<group>"; };
 		187C892F23F3D67C004F3F36 /* AboutUSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUSVC.swift; sourceTree = "<group>"; };
 		187C893123F3D68F004F3F36 /* SocialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialVC.swift; sourceTree = "<group>"; };
+		18F9A9E723F9196E005CB2AD /* PoliceStationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliceStationVC.swift; sourceTree = "<group>"; };
+		18F9A9E923F91988005CB2AD /* MosqueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosqueVC.swift; sourceTree = "<group>"; };
+		18F9A9EB23F9199E005CB2AD /* RestaurantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
+		18F9A9ED23F919B9005CB2AD /* PublicToiletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicToiletVC.swift; sourceTree = "<group>"; };
 		2BC7408218E3B631C76467A2 /* Pods-MapFind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapFind.debug.xcconfig"; path = "Target Support Files/Pods-MapFind/Pods-MapFind.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +100,10 @@
 				187C892D23F3D208004F3F36 /* Selcet_LocationVC.swift */,
 				187C892F23F3D67C004F3F36 /* AboutUSVC.swift */,
 				187C893123F3D68F004F3F36 /* SocialVC.swift */,
+				18F9A9E723F9196E005CB2AD /* PoliceStationVC.swift */,
+				18F9A9E923F91988005CB2AD /* MosqueVC.swift */,
+				18F9A9EB23F9199E005CB2AD /* RestaurantVC.swift */,
+				18F9A9ED23F919B9005CB2AD /* PublicToiletVC.swift */,
 			);
 			path = MapFind;
 			sourceTree = "<group>";
@@ -232,12 +244,16 @@
 				187C88F223F3C39F004F3F36 /* ViewController.swift in Sources */,
 				187C893223F3D68F004F3F36 /* SocialVC.swift in Sources */,
 				187C88EE23F3C39F004F3F36 /* AppDelegate.swift in Sources */,
+				18F9A9EC23F9199E005CB2AD /* RestaurantVC.swift in Sources */,
 				187C88F023F3C39F004F3F36 /* SceneDelegate.swift in Sources */,
 				187C892A23F3CB07004F3F36 /* HomeVC.swift in Sources */,
 				187C890423F3C4FF004F3F36 /* SWRevealViewController.m in Sources */,
 				187C892E23F3D208004F3F36 /* Selcet_LocationVC.swift in Sources */,
+				18F9A9EA23F91988005CB2AD /* MosqueVC.swift in Sources */,
 				187C893023F3D67C004F3F36 /* AboutUSVC.swift in Sources */,
+				18F9A9EE23F919B9005CB2AD /* PublicToiletVC.swift in Sources */,
 				187C892823F3CAF7004F3F36 /* MenuVc.swift in Sources */,
+				18F9A9E823F9196E005CB2AD /* PoliceStationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,10 +10,27 @@ import UIKit
 
 class Selcet_LocationVC: UIViewController {
     
+    @IBOutlet weak var toiletbtn: UIButton!
+    @IBOutlet weak var restbtn: UIButton!
+    @IBOutlet weak var policebtn: UIButton!
+    @IBOutlet weak var msqbtn: UIButton!
     @IBOutlet weak var menuBar: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        toiletbtn.layer.cornerRadius = 10
+        restbtn.layer.cornerRadius = 10
+        policebtn.layer.cornerRadius = 10
+        msqbtn.layer.cornerRadius = 10
+        
+        toiletbtn.layer.backgroundColor = UIColor.systemRed.cgColor
+        restbtn.layer.backgroundColor = UIColor.systemBlue.cgColor
+        policebtn.layer.backgroundColor = UIColor.systemOrange.cgColor
+        msqbtn.layer.backgroundColor = UIColor.systemGreen.cgColor
+        
+        
+        
         
         menuBar.target = self.revealViewController()
         menuBar.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -23,13 +40,23 @@ class Selcet_LocationVC: UIViewController {
     
     @IBAction func onTabShow(_ sender: UIButton) {
         if sender.tag == 1 {
-            print("Tab 1")
+           
+            let VC = storyboard?.instantiateViewController(identifier: "mosque") as! MosqueVC
+            self.navigationController?.pushViewController(VC, animated: true)
         } else if sender.tag == 2{
-             print("Tab 2")
+            
+            let VC = storyboard?.instantiateViewController(identifier: "police") as! PoliceStationVC
+            self.navigationController?.pushViewController(VC, animated: true)
+             
         } else if sender.tag == 3{
-             print("Tab 3")
+            let VC = storyboard?.instantiateViewController(identifier: "restaurant") as! RestaurantVC
+            self.navigationController?.pushViewController(VC, animated: true)
+            
         } else if sender.tag == 4{
-             print("Tab 4")
+            let VC = storyboard?.instantiateViewController(identifier: "toilet") as!
+            PublicToiletVC
+            self.navigationController?.pushViewController(VC, animated: true)
+             
         }
         
     }
